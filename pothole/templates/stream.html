@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font: 14px "Open Sans", "Arial", sans-serif;
+          }
+          
+          .one{
+            background-color: white;
+            padding: 10%;
+            {% comment %} margin: 20%; {% endcomment %}
+            margin: 0 auto;
+            {% comment %} margin-left: 25%; {% endcomment %}
+            width: 50%;
+            height: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+            border-radius: 8px;
+
+          }
+          .button{
+            background-color: #99DBF5;
+            margin-left: 33.3%;
+            margin-top: 5%;
+            width: 33.3%;
+            height: 30px;
+            color: white;
+            border-radius: 8px;
+            border-color: white;
+    
+          }
+          body{
+            background-color: azure;
+          }
+          .gohole{
+            text-align:center;
+            text-decoration:none;
+            color: white;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size:x-large;
+            font-weight: bold;
+            height: 40%;
+            background-color: #99DBF5;
+            width: 100%;    
+            border-radius: 8px;
+    }
+    img{
+      margin-left: 15%;
+    }
+    </style>
+    <div class="gohole">
+        goHOLE
+    </div>
+    <div class="one">
+        
+        <!-- <img src="care1.jpg" alt=""> -->
+        <img src="{% url 'video_feed' %}" alt="...">
+        <a href="{%url 'stop'%}"><button id="stopButton" class="button">
+            Stop
+          </button></a>
+    </div>
+<!-- <div class="right">
+    <img src="care1.jpg" alt="">
+    <img src="{% url 'video_feed' %}" alt="...">
+  <a href="{%url 'stop'%}"><button id="stopButton" class="button">
+    Stop
+  </button></a>
+</div>
+<div class="bottom">
+  <pre id="log"></pre>
+</div> -->
+</body>
+</html>

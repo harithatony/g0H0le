@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goHOLE</title>
+</head>
+<body><style>
+.main{
+    background-color: #fdfcfc;
+    width:50%;
+    border-radius: 2px;
+    /* border: #99627A solid; */
+    /* padding: 50px; */
+    /* padding-left: 50px; */
+    padding-bottom: 50px;
+    /* padding-right: 50px; */
+    height: 50%;
+    margin: 25%;
+    /* display:flex; */
+    /* flex-direction: column; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+}
+.sub{
+    display: flex;
+    flex-direction: row; 
+    padding-left: 22%;   
+}
+.gohole{
+    text-align:center;
+    text-decoration:none;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size:x-large;
+    font-weight: bold;
+    height: 30%;
+    background-color: #99DBF5;
+    width: 100%;
+    border-radius: 8px;
+}
+.start{
+    padding-top: 60px;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    font-family: "Courier New", monospace;
+    width:fit-content;
+    font-size:x-large;
+    font-weight: bold;  
+}
+.button{
+    /* padding-top: %; */
+    padding-left: 50px;
+    /* align-items:center; */
+    /* width:fit-content; */
+    padding-right: 10%;
+    margin-top: 9%;
+    height: 25%;
+    border-radius: 20px;
+   background-color: white;
+}
+button:hover{
+    background-color: #99DBF5
+}
+img{
+    width: 30%;
+}
+body{
+    background-color: azure;
+}
+
+button:active{
+   transform: translateY(4px);
+}</style>
+    <div class="main">
+        <div class="gohole">
+            goHOLE
+        </div>
+
+        <div class="sub">
+            <div class="start">
+                Start Journey
+            </div>
+            <div class="button">
+                <a href={%url 'start'%}><button type="button">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3513/3513584.png" alt="play icon">
+                </button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
